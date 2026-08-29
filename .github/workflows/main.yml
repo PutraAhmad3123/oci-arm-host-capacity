@@ -39,4 +39,6 @@ jobs:
           OCI_OCPUS: "1"
           OCI_MEMORY_IN_GBS: "6"
           OCI_SSH_PUBLIC_KEY: ${{ secrets.OCI_SSH_PUBLIC_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_USER_ID: ${{ secrets.TELEGRAM_USER_ID }}
         run: php index.php
